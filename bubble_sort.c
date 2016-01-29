@@ -1,4 +1,4 @@
-/** @file buble_sort.c
+/** @file bubble_sort.c
  *  @brief Definición de las funciones para el funcionamiento de la libreria bubble sort
  *
  *  Este archivo contiene el desarrollo de las funciones indispensables para el ordenamiento
@@ -11,13 +11,6 @@
 #include <stdio.h>
 #include "bubble_sort.h"
 
-/** @brief Ordenamiento de un arreglo
- * 
- *  @param *store Apuntador para acceder al arreglo
- *  @param n el tamaño del arreglo
- *
- *  @return Void
- */
 void bubble(int *store, int x){
   int tempo, i, j;
   for (i=0; i<(x-1); i++){
@@ -32,14 +25,7 @@ void bubble(int *store, int x){
 }
 
 
-/** @brief Llenar el arreglo para su ordenamiento
- * 
- *  @param *store Apuntador para acceder al arreglo
- *  @param x Variable para conocer el tamaño del arreglo
- *
- *  @return Void
- */
- void llenar(int *store, int x){
+void llenar(int *store, int x){
     int i;
     for(i=0;i<x;i++){
         printf("Ingresa el numero para la posicion %d: ",i+1);
@@ -48,14 +34,7 @@ void bubble(int *store, int x){
  }
 
 
-/** @brief Imprime lo que este almacenado en el arreglo dado
- * 
- *  @param *store Apuntador para acceder al arreglo
- *  @param x tamaño del arreglo
- *
- *  @return Void
- */
- void imprimir(int *store, int x){
+void imprimir(int *store, int x){
     int c;
      for (c = 0; c < x ; c++ ){
        printf("%d ", store[c]);
@@ -64,13 +43,6 @@ void bubble(int *store, int x){
  }
 
 
-/** @brief Validar los numeros dados por el usuario
- * 
- *  @param *store Apuntador para acceder al arreglo
- *  @param i Posicion del arreglo a validar
- *
- *  @return Void
- */
 void validar(int *store, int i){
      int valida, temp;
         valida = scanf("%d",&store[i]);
@@ -81,4 +53,3 @@ void validar(int *store, int i){
           valida = scanf("%d", &store[i]);
         }
  }
-

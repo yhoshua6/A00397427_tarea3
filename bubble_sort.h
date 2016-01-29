@@ -16,7 +16,7 @@
 /** @brief Ordenamiento de un arreglo
  * 
  *  @param *store Apuntador para acceder al arreglo
- *  @param n el tamaño del arreglo
+ *  @param x el tamaño del arreglo
  *
  *  @return Void
  */
